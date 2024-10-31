@@ -1,2 +1,6 @@
 dist/
 node_modules/
+backend/google-cloud-sdk/
+
+backend/google-cloud-sdk/README
+.env
