@@ -4,6 +4,7 @@ import { Router } from "express";
 
 import { getAllChats_R, createChat_R, addMessage_R, updateMessage_R } from './controllers';
 
+console.log('Initializing chats router');
 const router: Router = Router();    
 
 router.get('/', getAllChats_R);
