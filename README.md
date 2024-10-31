@@ -8,6 +8,9 @@ POC of the project!
 - Database (mongodb)
 - Test script
 
+## Development
+Make sure you open the root directory of the project in the vscode in order to use the vscode debugger.
+
 ## Testing script documentation
 ### Tutorial
 
