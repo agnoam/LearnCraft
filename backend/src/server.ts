@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 
 import UsersRouter from './api/users/routes';
 import ChatsRouter from './api/chats/routes';
+import VertexRouter from './api/vertex/routes'
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ const port = process.env.PORT || 3000;
 console.log('Initializing routers');
 app.use('/users', UsersRouter);
 app.use('/chats', ChatsRouter);
+app.use('/vertex', VertexRouter);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);
