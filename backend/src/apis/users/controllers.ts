@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { DecodedIdToken } from 'firebase-admin/auth';
 
-import { firebaseAuth } from '../../config/firebase';
+import { firebaseAuth } from '../../configs/firebase';
 import { ResponseStatus } from '../../constants/constants';
 
 /* 

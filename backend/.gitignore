@@ -1,1 +1,3 @@
-backend/google-cloud-sdk/
+google-cloud-sdk/
+
+admin-service-account.json
