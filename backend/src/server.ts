@@ -6,6 +6,7 @@ import ErrorMiddleware from "./middlewares/error-handler";
 import AuthorizationMiddleware from "./middlewares/authorization";
 import UsersRouter from './apis/users/routes';
 import ChatsRouter from './apis/chats/routes';
+import VertexRouter from './apis/vertex/routes';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(bodyParser.json());
 console.log('Initializing routers');
 app.use('/users', UsersRouter);
 app.use('/chats', AuthorizationMiddleware, ChatsRouter);
+app.use('/vertex', VertexRouter);
 
 // Root error middleware - (this is an exeption for middlewares, it should be last)
 app.use(ErrorMiddleware);
