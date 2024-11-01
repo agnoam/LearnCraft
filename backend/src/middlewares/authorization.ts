@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { DecodedIdToken, FirebaseAuthError } from "firebase-admin/auth";
 
 import { ResponseStatus } from "../constants/constants";
-import { firebaseAuth } from "../config/firebase";
+import { firebaseAuth } from "../configs/firebase";
 
 /**
  * Authorization middleware - Checking for user authentication/authorization

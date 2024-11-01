@@ -2,10 +2,10 @@ import express, { Express } from "express";
 import bodyParser from 'body-parser';
 import dotenv from "dotenv";
 
-import ErrorMiddleware from "./middleware/error-handler";
-import AuthorizationMiddleware from "./middleware/authorization";
-import UsersRouter from './api/users/routes';
-import ChatsRouter from './api/chats/routes';
+import ErrorMiddleware from "./middlewares/error-handler";
+import AuthorizationMiddleware from "./middlewares/authorization";
+import UsersRouter from './apis/users/routes';
+import ChatsRouter from './apis/chats/routes';
 
 dotenv.config();
 
